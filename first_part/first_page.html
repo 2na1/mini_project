@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="style1.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>start_page</title>
+  </head>
+  <body>
+    <div class="start_page">
+      <img
+        src="todakboo.JPG"
+        class="img"
+      />
+      <h1>힘 짜 속 쓰 레 기 통</h1>
+      <button type="button" class="start_btn">위로 받으러 가기</button>
+    </div>
+    <div class="guide_modal">
+      <div class="guide_modal_content">
+        <h1>*사용 방법 및 주의 사항 *</h1>
+          <p class="welcome">감정을 버릴 수 있는 가상 공간인 <br> <font size="4" color="#99ccff">‘힘짜속 쓰레기통’</font>에 오신 것을 환영합니다.</p>
+          <div class="guide_content">
+            <p>1. 아래의 힘짜속 쓰기 버튼을 누르면, <br>  힘짜속을 쓸 수 있는 공간이 나타납니다. <br>  그곳에 힘짜속을 작성해주세요</p>
+            <p>2. 작성을 완료하셨다면, <br>   작성 완료 버튼을 눌러주세요.</p> 
+            <p>3. 힘 짜 속 쓰레기통 중 하나에  <br>  당신의 문제를 버리세요.</p>
+            <p>4. 저희는 저희는 당신을 위해  <br>  작은 위로를 드릴 예정입니다.
+              <br />*상황과 맞지 않을 수 있으니,  <br>   참고만 해주시면 감사하겠습니다:)</p>
+          <button type="button" class="write_down_btn">힘짜속 쓰기</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+  const startBtn = document.querySelector(".start_btn");
+    const guideModal = document.querySelector(".guide_modal");
+    const writeDownBtn = document.querySelector(".write_down_btn");
+
+    startBtn.addEventListener("click", () => {
+      guideModal.style.display = "block";
+    });
+    writeDownBtn.addEventListener("click", () => {
+      window.location.href = "letter.html";
+    });
+  </script>
+</html>
