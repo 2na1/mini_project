@@ -24,3 +24,6 @@ function drop(ev) {
     }
   }, 100);
 }
+function changePage() {
+  window.location.href = "third_part/cookie-master/cookie1.html";
+}
